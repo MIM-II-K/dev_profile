@@ -638,7 +638,7 @@ export default function Home() {
                   <h3 className="font-bold text-foreground">BSc (Hons) Computer Systems Engineering</h3>
                   <p className="text-muted-foreground text-sm">Faculty of Science and Technology</p>
                 </div>
-                <Badge variant="outline" className="font-mono text-xs border-white/20 text-muted-foreground shrink-0">2017 – 2021</Badge>
+                <Badge variant="outline" className="font-mono text-xs border-white/20 text-muted-foreground shrink-0">2022 – 2025</Badge>
               </div>
             </div>
 
