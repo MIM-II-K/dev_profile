@@ -635,7 +635,7 @@ export default function Home() {
               </h2>
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <h3 className="font-bold text-foreground">B.Sc. Computer Science</h3>
+                  <h3 className="font-bold text-foreground">BSc (Hons) Computer Systems Engineering</h3>
                   <p className="text-muted-foreground text-sm">Faculty of Science and Technology</p>
                 </div>
                 <Badge variant="outline" className="font-mono text-xs border-white/20 text-muted-foreground shrink-0">2017 – 2021</Badge>
