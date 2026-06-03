@@ -119,7 +119,7 @@ export default function Home() {
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = 'data:text/plain;charset=utf-8,Injan%20Thada%20-%20Resume';
+    link.href = '/resume.pdf';
     link.download = 'Injan_Thada_Resume.pdf';
     link.click();
   };
@@ -142,9 +142,14 @@ export default function Home() {
       setFormStatus("success");
       setForm({ name: "", email: "", message: "" });
       setTimeout(() => setFormStatus("idle"), 5000);
-    } catch {
-      setFormStatus("error");
-      setTimeout(() => setFormStatus("idle"), 5000);
+    } catch (error) {
+    console.error("EmailJS Error:", error);
+    console.log(import.meta.env);
+    console.log(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+
+    setFormStatus("error");
+
+    setTimeout(() => setFormStatus("idle"), 5000);
     }
   };
 
