@@ -1,2 +1,8 @@
 User-agent: *
 Allow: /
+
+# Block unnecessary files if needed
+Disallow: /api/
+Disallow: /admin/
+
+Sitemap: https://injanthada.com.np/sitemap.xml
